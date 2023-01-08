@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-06T23:53:56 PKT" name="Surefire suite" finished-at="2023-01-06T23:54:04 PKT" duration-ms="7603">
+    <groups>
+    </groups>
+    <test started-at="2023-01-06T23:53:56 PKT" name="Surefire test" finished-at="2023-01-06T23:54:04 PKT" duration-ms="7603">
+      <class name="TestNgTest">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:TestNgTest@24528a25]" started-at="2023-01-06T23:53:56 PKT" name="setUpMethod" finished-at="2023-01-06T23:53:58 PKT" duration-ms="1861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="checkResourcesButtonWorks()[pri:0, instance:TestNgTest@24528a25]" started-at="2023-01-06T23:53:58 PKT" name="checkResourcesButtonWorks" finished-at="2023-01-06T23:54:00 PKT" duration-ms="1628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResourcesButtonWorks -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:TestNgTest@24528a25]" started-at="2023-01-06T23:54:00 PKT" name="tearDownMethod" finished-at="2023-01-06T23:54:04 PKT" duration-ms="4077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- TestNgTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
