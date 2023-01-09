@@ -10,17 +10,21 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 /**
  *
  * @author HP
  */
 public class TestNgTest {
-    WebDriver driver = new ChromeDriver();
+    
+    // initializing the driver and setting the headless property
+    
+    WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
     
         
     public TestNgTest() {
     }
-
+    
     @BeforeMethod
     public void setUpMethod() throws Exception {
         System.setProperty("webdriver.chrome.driver", ".\\chromedriver.exe");
@@ -36,7 +40,8 @@ public class TestNgTest {
     @Test
     public void checkIfSubmitClickable() throws Exception {
        WebElement button = driver.findElement(By.xpath(".//button[@id = 'contactBtn']"));
-        assertTrue(button.isDisplayed());
+        
+       assertTrue(button.isDisplayed());
         assertTrue(button.isEnabled());
     }
     
